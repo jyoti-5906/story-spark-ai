@@ -35,46 +35,57 @@ export const doPublishAccessibility = (subscriptionType: string) => {
   }
 };
 
+export const SELECTED_TOPIC_CLASSES = "bg-indigo-100 text-indigo-800";
+export const UNSELECTED_TOPIC_CLASSES = "bg-slate-700 text-slate-300";
+
 export interface ITopicData {
   title: string;
-  color: string;
+  color?: string;
+  className?: string;
   selected: boolean;
 }
 
 export const topicsData: ITopicData[] = [
   {
     title: "#AIWriting",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-blue-100 text-blue-800",
+    className: SELECTED_TOPIC_CLASSES,
     selected: true,
   },
   {
     title: "#StoryGeneration",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-purple-100 text-purple-800",
+    className: SELECTED_TOPIC_CLASSES,
     selected: true,
   },
   {
     title: "#Writing",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-blue-100 text-blue-800",
+    className: UNSELECTED_TOPIC_CLASSES,
     selected: false,
   },
   {
     title: "#Creativity",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-green-100 text-green-800",
+    className: UNSELECTED_TOPIC_CLASSES,
     selected: false,
   },
   {
     title: "#DigitalMarketing",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-yellow-100 text-yellow-800",
+    className: UNSELECTED_TOPIC_CLASSES,
     selected: false,
   },
   {
     title: "#Storytelling",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-purple-100 text-purple-800",
+    className: UNSELECTED_TOPIC_CLASSES,
     selected: false,
   },
   {
     title: "#Productivity",
-    color: "bg-indigo-100 text-indigo-800",
+    color: "bg-red-100 text-red-800",
+    className: UNSELECTED_TOPIC_CLASSES,
     selected: false,
   },
 ];
