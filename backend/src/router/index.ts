@@ -10,6 +10,7 @@ import { AnalysisRouter } from "../app/modules/analysis/analysis.router";
 import { ReviewRouter } from "../app/modules/review/review.router";
 import { ReactionRouter } from "../app/modules/reaction/reaction.router";
 import { ContactRoutes } from "../app/modules/contact/contact.route";
+import { StoriesRouter } from "../routes/stories";
 
 import { NewsletterRouter } from "../app/modules/newsletter/newsletter.route";
 
@@ -75,6 +76,10 @@ const modules = [
   {
     path: "/analytics",
     router: AnalyticsRouter,
+  },
+  {
+    path: "/stories",
+    router: StoriesRouter,
   },
   {
     path: "/contact",

@@ -21,7 +21,6 @@ import DashboardComponent from "./components/dashboard/dashboard.component";
 import RootLayout from "./components/layout/root_layout.component";
 import DashboardLayout from "./components/dashboard/dashboard_layout.component";
 import SettingComponent from "./components/dashboard/settings/settings.component";
-import StoriesComponent from "./components/stories/stories.component";
 import WriterApplicationComponent from "./components/dashboard/writers/writer_application.component";
 import UserComponent from "./components/dashboard/users/user.component";
 import PricingComponent from "./components/pricing/pricing.component";
@@ -52,6 +51,7 @@ import ResourcesListComponent from "./components/community/resources_list.compon
 import ResourceDetailComponent from "./components/community/resource_detail.component";
 import MagicCursorComponent from "./components/magic-cursor/magic_cursor.component";
 import ContributorsComponent from "./components/footer/contributors";
+import BranchingStory from "./components/stories/BranchingStory";
 
 const ProtectedRoute = ({
   element,
@@ -231,7 +231,7 @@ function App() {
           path="/stories"
           element={
             <RootLayout>
-              <StoriesComponent />
+              <BranchingStory />
             </RootLayout>
           }
         />
